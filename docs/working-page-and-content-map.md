@@ -17,10 +17,12 @@ Status: initial Eleventy content plan. Every factual field marked `VERIFY` must 
 | `/roof-problems/gutter-overflow/` | Customer problem route | Draft; VERIFY gutter services |
 | `/repair-services/` | Service hub | Draft |
 | `/repair-services/roof-leak-repairs/` | Service detail | Draft; VERIFY guarantees/response times |
+| `/repair-services/strip-and-rebatten/` | Service detail with staged project evidence | Draft; VERIFY scope, materials, guarantees, and structural work boundaries |
 | `/repair-services/tile-and-slate-repairs/` | Service detail | Draft |
 | `/repair-services/ridge-verge-valley-repairs/` | Service detail | Draft |
 | `/repair-services/chimney-and-leadwork-repairs/` | Service detail | Draft |
 | `/repair-services/flat-roof-repairs/` | Service detail | Draft |
+| `/repair-services/drone-surveys/` | Service detail with aerial evidence controls | Draft; VERIFY pilot, permissions, privacy, weather limits, and retention |
 | `/repair-services/guttering-fascias-soffits/` | Service detail | Draft |
 | `/repair-services/roof-inspections/` | Service detail | Draft; VERIFY inspection deliverable |
 | `/new-roofs/` | New roofs and re-roofing | Draft; VERIFY offering |
@@ -57,6 +59,10 @@ Status: initial Eleventy content plan. Every factual field marked `VERIFY` must 
 - Roof inspections
 - New roofs and re-roofing
 - Emergency make-safe only if management confirms it is genuinely offered
+
+## Project evidence workflow
+
+For suitable projects, the proposed content workflow is before, during, and after photography plus short video at agreed milestones. Capture must be safe, proportionate, and consented. Drone imagery needs separate checks for pilot competence, operating permissions, privacy, weather, retention, and neighbouring properties. Publish only management-approved captions, locations, outcomes, and image rights.
 
 ## Project record shape
 

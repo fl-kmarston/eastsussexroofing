@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: problemPages
+  size: 1
+  alias: problem
+title: "{{ problem.title }}"
+description: "{{ problem.intro }}"
+permalink: "/roof-problems/{{ problem.slug }}/"
+---
+<section class="page-hero"><div class="shell"><div class="breadcrumb">Roof problems / {{ problem.title }}</div><h1>{{ problem.title }}</h1><p>{{ problem.intro }}</p></div></section>
+<section class="section"><div class="shell split"><div><div class="kicker">Start safely</div><h2>What to notice before you call.</h2></div><div class="prose"><ul>{% for point in problem.points %}<li>{{ point }}</li>{% endfor %}</ul><p>Describe what you can see and when it happens. Avoid making the problem worse by accessing a roof or loft space that is not safe.</p><a class="button" href="{{ problem.service }}">See the matching service</a></div></div></section>
+{% set ctaTitle = "Want to talk through this roof problem?" %}{% include "components/cta.njk" %}

@@ -28,5 +28,8 @@ screenshots/
 artifacts/
 output/
 node_modules/
+dist/
 .runtime-libs/
 
+# The generated site
+dist/

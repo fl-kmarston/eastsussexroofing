@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if service %}{{ service.title }}{% elif problem %}{{ problem.title }}{% else %}{{ title }}{% endif %} | {{ site.name }}</title>
+  <meta name="description" content="{% if service %}{{ service.intro }}{% elif problem %}{{ problem.intro }}{% else %}{{ description or site.description }}{% endif %}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{% if service %}{{ service.title }}{% elif problem %}{{ problem.title }}{% else %}{{ title }}{% endif %} | {{ site.name }}">
+  <meta property="og:description" content="{% if service %}{{ service.intro }}{% elif problem %}{{ problem.intro }}{% else %}{{ description or site.description }}{% endif %}">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "components/header.njk" %}
+  <main id="main">{{ content | safe }}</main>
+  {% include "components/footer.njk" %}
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

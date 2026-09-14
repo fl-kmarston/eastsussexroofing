@@ -1,0 +1,14 @@
+{
+  "name": "east-sussex-roofing-site",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Content-driven East Sussex Roofing website built with Eleventy.",
+  "scripts": {
+    "build": "eleventy --input=src --output=dist",
+    "serve": "eleventy --serve --input=src --output=dist",
+    "check": "eleventy --input=src --output=dist"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}

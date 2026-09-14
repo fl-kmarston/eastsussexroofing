@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+title: Roof Problems
+description: Start with the roofing problem you can see and find the right next step.
+permalink: /roof-problems/
+---
+<section class="page-hero"><div class="shell"><div class="breadcrumb">East Sussex Roofing / Customer guide</div><h1>Roof problems, in plain language.</h1><p>Water marks, missing tiles, storm damage and overflowing gutters all need a slightly different conversation. Start here.</p></div></section>
+<section class="section"><div class="shell"><div class="grid">{% for problem in site.problems %}<article class="card"><span class="card-number">{{ problem.icon }}</span><h2>{{ problem.title }}</h2><p>{{ problem.text }}</p><a class="card-link" href="{{ problem.url }}">Read the guide →</a></article>{% endfor %}</div></div></section>
+{% set ctaTitle = "Not sure which problem matches?" %}{% include "components/cta.njk" %}

@@ -1,0 +1,8 @@
+---
+layout: layouts/base.njk
+title: Areas Covered
+description: Roofing services focused on Brighton, Hove and genuine East Sussex coverage.
+permalink: /areas/
+---
+<section class="page-hero"><div class="shell"><div class="breadcrumb">East Sussex Roofing / Local coverage</div><h1>Local coverage that stays specific.</h1><p>Brighton &amp; Hove is the primary local focus. Other East Sussex locations should be added when the business can support them with accurate service information and genuine evidence.</p></div></section>
+<section class="section section--bright"><div class="shell split"><div><div class="kicker">Coverage</div><h2>Where the conversation starts.</h2></div><div><ul class="list">{% for area in site.areas %}<li><a href="{% if area == 'Brighton' or area == 'Hove' %}/areas/brighton-and-hove/{% else %}/contact/{% endif %}">{{ area }}</a><span aria-hidden="true">→</span></li>{% endfor %}</ul></div></div></section>
