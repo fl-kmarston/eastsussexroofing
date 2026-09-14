@@ -5,5 +5,5 @@ description: Roofing repair services for common roof, tile, chimney, flat-roof a
 permalink: /repair-services/
 ---
 <section class="page-hero"><div class="shell"><div class="breadcrumb">East Sussex Roofing / Services</div><h1>Repair services built around the detail.</h1><p>Roof repairs are often about the junctions, coverings and edges where water finds a way in. These pages organise the conversation.</p></div></section>
-<section class="section section--bright"><div class="shell"><div class="grid">{% for service in site.services %}<article class="card"><span class="card-number">SERVICE {{ loop.index }}</span><h2>{{ service.title }}</h2><p>{{ service.text }}</p><a class="card-link" href="{{ service.url }}">View service →</a></article>{% endfor %}</div></div></section>
+<section class="section section--bright"><div class="shell"><div class="grid">{% for service in site.services %}<article class="card"><span class="card-number">SERVICE {{ loop.index }}</span><h2>{{ service.title }}</h2><p>{{ service.text }}</p><a class="card-link" href="{{ service.url | url }}">View service →</a></article>{% endfor %}</div></div></section>
 {% set ctaTitle = "Talk through the repair, not a jargon list." %}{% include "components/cta.njk" %}

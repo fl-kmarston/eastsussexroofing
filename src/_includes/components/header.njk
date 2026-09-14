@@ -1,11 +1,11 @@
 <header class="site-header">
   <div class="utility"><div class="shell utility-inner"><a href="tel:07587444017">Call {{ site.phone }}</a><span>Roof repairs across Brighton &amp; East Sussex</span><a href="mailto:{{ site.email }}">Email us</a></div></div>
   <div class="shell navbar">
-    <a class="brand" href="/" aria-label="{{ site.name }} home"><span class="brand-mark" aria-hidden="true">ES</span><span class="brand-text">East Sussex<br>Roofing</span></a>
+    <a class="brand" href="{{ '/' | url }}" aria-label="{{ site.name }} home"><span class="brand-mark" aria-hidden="true">ES</span><span class="brand-text">East Sussex<br>Roofing</span></a>
     <nav id="main-menu" class="nav-links" data-menu aria-label="Main navigation">
       {% for item in site.nav %}<a href="{{ item.url }}">{{ item.label }}</a>{% endfor %}
     </nav>
-    <a class="button" href="/contact/">Get a quote</a>
+    <a class="button" href="{{ '/contact/' | url }}">Get a quote</a>
     <button class="menu-toggle" type="button" data-menu-button aria-expanded="false" aria-controls="main-menu">Menu</button>
   </div>
 </header>
