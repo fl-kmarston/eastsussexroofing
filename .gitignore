@@ -30,5 +30,3 @@ output/
 node_modules/
 .runtime-libs/
 
-# Generated docs and media artifacts
-docs/*.docx
